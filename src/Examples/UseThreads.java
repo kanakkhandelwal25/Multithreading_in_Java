@@ -23,4 +23,7 @@ class MyThread implements Runnable {
 }
 
 public class UseThreads {
+    public static void main(String[] args) {
+
+    }
 }
