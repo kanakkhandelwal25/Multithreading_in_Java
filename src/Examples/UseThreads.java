@@ -28,5 +28,7 @@ public class UseThreads {
 
         MyThread obj = new MyThread("Child #1");
 
+        Thread newThrd = new Thread(obj);
+
     }
 }
