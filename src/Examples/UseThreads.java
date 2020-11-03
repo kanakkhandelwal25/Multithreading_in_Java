@@ -24,6 +24,9 @@ class MyThread implements Runnable {
 
 public class UseThreads {
     public static void main(String[] args) {
+        System.out.println("Main thread statring.");
+
+        MyThread obj = new MyThread("Child #1");
 
     }
 }
