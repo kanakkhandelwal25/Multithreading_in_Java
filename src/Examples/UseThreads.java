@@ -24,13 +24,24 @@ class MyThread implements Runnable {
 
 public class UseThreads {
     public static void main(String[] args) {
-        System.out.println("Main thread statring.");
+        System.out.println("Main thread starting.");
 
         MyThread obj = new MyThread("Child #1");
 
         Thread newThrd = new Thread(obj);
 
         newThrd.start();
+
+        for (int index = 0; index < 50; index++) {
+            System.out.println(".");
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException exc) {
+                System.out.println("Main thread interrupted.");
+            }
+        }
+
+        System.out.println("Main thread ending.");
 
     }
 }
