@@ -30,5 +30,7 @@ public class UseThreads {
 
         Thread newThrd = new Thread(obj);
 
+        newThrd.start();
+
     }
 }
